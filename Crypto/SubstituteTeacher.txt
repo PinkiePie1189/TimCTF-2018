@@ -1,0 +1,7 @@
+Problem:Substitute Teacher
+Solver(s):Gabies#3036
+In this problem we were given a ciphertext.txt.
+The encryption was just a alphabet shuffle for lowercase letters, so when i found a paragraph that was written in uppercase i just copied
+it and pasted it in google, i found out soon that the book was The Da Vinci Code. 
+for here on it's trivial to find out the inverse encryption permutation of the alphabet and then apply it on the ciphertext.
+the just look up for "timctf" and you'll get the flag. (i actuall solved this problem on my phone :) ).

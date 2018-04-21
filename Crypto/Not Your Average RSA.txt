@@ -1,0 +1,9 @@
+Problem:Not your average RSA
+Solvers:PinkiePie1189#7418,Gabies#3036
+Tools used:Python
+
+This problem was very similar to "Those are rookie numbers", only that n was way larger and we didn't know e.
+To factorize n would be imposible, but the hint about MP told us something, n wasn't semiprime, it was a Multiple Prime RSA, so easyly factorizable.
+Now that we know the factorization we can calculate Carmichael(n) which is equal to lcm(primes-1), this gives us phi.
+Now to get e we assumed that it was equal to the most common value 65537=(2^16+1)(the largest Fermat Prime known).
+Then we proceed in the same manner as in "Those are rookie numbers" to get the flag.

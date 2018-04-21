@@ -1,0 +1,6 @@
+Problem:Those Are Rookie Numbers
+Solvers:PinkiePie1189#7418,Gabies#3036
+Tools used:Python
+The problem was giving us the RSA parameters n,c,e.
+n was small so using factordb.com we factorize n to get p and q, and then phi, and then d using the extended euclidean algorithm.
+now, just do c^d % n to get the plaintext and decode it (it's encoded in hexadecimal form) to get the flag.

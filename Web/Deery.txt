@@ -1,0 +1,6 @@
+Problem:Deery
+Solver(s):Gabies#3036
+
+In this problem we were given a link: deery.woodlandhighschool.xyz.
+Going trough the web page source and looking trough all of the files we get to another link: http://deery.woodlandhighschool.xyz/components/transition.js.
+Here just look up "timctf" and you find the flag.

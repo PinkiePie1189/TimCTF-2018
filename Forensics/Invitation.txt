@@ -1,0 +1,5 @@
+Problem:Invitation
+Solver(s):Gabies#3036
+
+We were given a PDF document of an invitation, nothing to see at start.
+I opened the file using ghex and found a link on github. The link showed up a panda_gif.txt file which was looking like an base64 encoding, but it started with "==" so it was reversed, so just unreverse and decode it to get a photo where the flag can be read.

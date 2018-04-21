@@ -1,0 +1,14 @@
+Problem:SSS Part1
+Solver(s):Gabies#3036
+
+The problem had attached to it a .png file which was showing a linear function and 3 values in the XY coordinate system, also the picture shows a dot at the value of f(0).
+The problem statement was the big hint, looking up for Lagrange in cryptography you can read about Lagrange Interpolation and Shamir's Secret Sharing.
+So after a good read time it was clear that we were given 3 keys for an SSS which needed only 2 keys.
+
+SO:
+S=f(0)
+S+X1=K1
+S+X2=K2
+2*S=K1+K2-X1-X2
+S=(K1+K2-X1-X2)/2
+Transform S in hexadecimal and the into ascii ant that's the flag.

@@ -1,0 +1,3 @@
+Problem:History
+Solver(s):PinkiePie1189#7418
+This problem was trivial. You were given a Linux binary file which you could execute.The solution was actually inside the file itself, looking through it with a text editor as Notepad++ would reveal the flag but seperated with spaces. 
