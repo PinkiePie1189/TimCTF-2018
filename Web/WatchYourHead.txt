@@ -1,0 +1,4 @@
+Problem:WatchYourHead
+Solver(s):JunkWub ?????????#7357
+
+By using the Repeater from Burp Suite, we can send and re-send requests to carefully analize the response from the site. We can then notice that there are two interesting items sent, X-Data and Data-X. Upon further inspection, they seem to repeat. We list out the repetitions linearly and the flag should be formed.

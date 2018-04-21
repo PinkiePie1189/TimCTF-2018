@@ -1,0 +1,4 @@
+Problem:Math_Exam
+Solver(s):PinkiePie1189#7418, JunkWub ?????????#7357, Gabies#3036
+
+We decompiled the code using https://retdec.com/. After a few edits we were able to compile it on our local C++ IDE. We noticed that the "Master Key" was checked in 5 stages, and that it has to have >= 29 characters. We then saw that each check part was checking 6 characters each, so we could bruteforce each part, thus building our Master Key. When we saw that the first 6 characters were "timctf", we were convinced that the Master Key was indeed the flag. So after bruteforcing the rest of the characters (and bypassing some unpassable if statements), we obtained our flag.

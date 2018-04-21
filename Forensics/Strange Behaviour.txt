@@ -1,0 +1,4 @@
+Problem: Strange Behaviour
+Solver(s): JunkWub ?????????#7357, PinkiePie1189#7418, Gabies#3036
+
+We ran binwalk on the file, and noticed a zipped archive inside it. We copied the bytes at that location and saved them into a new file. We then unzipped the new file that contained some .xml files, one of them containing our flag.

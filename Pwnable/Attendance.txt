@@ -1,0 +1,10 @@
+Problem:Attendance
+Solver(s):JunkWub ?????????#7357,PinkiePie1189#7418
+
+This problem features a simple Buffer Overflow exploit. We saw that the port for the netcat connection was 31337, so we tried to call student #31337. Coincidentally, this was the input that let us send a message to the principal. We found by disassembling the program that the principal message input method was unprotected, so a buffer overflow on the EIP would be possible. We studied the objdump of the program and we saw that there was an unused function called *bring_students_to_school*. After some trial and error, we crafted an input string that writes directly the address of the function into the EIP register. The function opened a bash shell, so after we piped the overflow input string into netcat on the given IP, by also using the command cat- to interact with the shell, we were able to execute commands directly on the server. Thus, we did an ls, then cd'd into /home/attendance, ran *cat flag* and got the flag.
+
+Tools used:
+- gdb + gef extension (for studying the program's flow and memory addresses)
+- objdump (for disassembling)
+- https://retdec.com/ online decompiler (for more clear disassembles + a clear C code interpretation of the ASM code)
+- netcat (for direct TCP communication with the server)

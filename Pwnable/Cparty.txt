@@ -1,0 +1,10 @@
+Problem:Attendance
+Solver(s):JunkWub ?????????#7357,PinkiePie1189#7418
+
+This problem features another kind of Buffer Overflow. In Attendance, we had to override the EIP Register, but in CParty we had to override a value in memory (at $ebp - 0x14) that was compared to c0defefe. We saw this by studying the disassembled code, and seeing that at one point the program would call "cat /home/party/flag" after running a cmp between the value at ($ebp - 0x14) and *c0defefe*. We studied our input and saw that it was allocated at an address smaller than $ebp-0x14, so overflowing $ebp-0x14 with our input should be easy. We then ran some tests and played with various input lengths until we saw the exact position of the bytes that would override $ebp-0x14. After writing *c0defefe* into the $ebp-0x14 address with the right bytes in our input string, the code would then proceed to run *cat /home/party/flag*. After running the program on the server with the overflowing input, we got our flag.
+
+Tools used:
+- gdb + gef extension (for studying the program's flow and memory addresses)
+- objdump (for disassembling)
+- https://retdec.com/ online decompiler (for more clear disassembles + a clear C code interpretation of the ASM code)
+- netcat (for direct TCP communication with the server)

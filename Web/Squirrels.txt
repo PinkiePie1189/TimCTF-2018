@@ -1,5 +1,4 @@
-Problem:Squirrels
-Solver(s):PinkiePie1189#7418
-,JunkWub ?????????#7357
-Tools used:Dirsearch,Git Dumper
+Problem: Squirrels
+Solver(s):JunkWub ?????????#7357, PinkiePie1189#7418
+
 By using the Dirsearch utility we can see that the site has a .git folder, and plenty of files inside the .git folder that can be accessed and read. By using the Git Dumper utility, we downloaded the site's git repository, but the flag was not there and it looked there was a single commit and a single branch. Upon closer inspection, we noticed that the config file inside the .git folder contained the line [remote "fork"],which meant there was another remote called "fork" added to that git repository. By simply fetching that remote,and checking out into it,we quickly found the flag in the index.html file.
