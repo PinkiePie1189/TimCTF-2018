@@ -12,7 +12,7 @@ Tools used: Python, factordb.com <br>
 ### **(50p) Back in Time:**
 #### Solver(s): Gabies#3036
 
-In this problem we were given a ciphertext and an encryption python script. The script just applies on the plaintext an alphabet shuffle for lowercase letters. The ciphertext just contains the encypted flag: hsijhk{Pc3nvO_R4NvwM_1S_Nwh_RArD0M}. We can see that some of the words can be deducted: RArD0M-> RAnD0M so r=n; R4NvwM->R4NdoM so v=d and w=o also hsijhk-> timctf. From all these observations the flag becomes timctf{Pc3ndo_R4NdoM_1S_Not_RAnD0M}. Looking up for words that look like p*e*do in english we quickly see that the flag is timctf{Ps3udo_R4NdoM_1S_Not_RAnD0M}. <br> <br>
+In this problem we were given a ciphertext and an encryption python script. The script just applies on the plaintext an alphabet shuffle for lowercase letters. The ciphertext just contains the encypted flag: hsijhk{Pc3nvO_R4NvwM_1S_Nwh_RArD0M}. We can see that some of the words can be deducted: RArD0M-> RAnD0M so r=n; R4NvwM->R4NdoM so v=d and w=o also hsijhk-> timctf. From all these observations the flag becomes timctf{Pc3ndo_R4NdoM_1S_Not_RAnD0M}. Looking up for words that look like p?e?do in english we quickly see that the flag is timctf{Ps3udo_R4NdoM_1S_Not_RAnD0M}. <br> <br>
 Tools used: Google <br>
 <br>
 <br>
